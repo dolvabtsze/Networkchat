@@ -1,0 +1,14 @@
+{
+  "name": "Chat UI",
+  "description": "Első Chat Programunk",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/img/chat_512.png",
+    "128": "/img/chat_128.png"
+  },
+  "developer": {
+    "name": "Fülöp József",
+    "url": "http://www.stud.u-szeged.hu/Fulop.Jozsef.1"
+  },
+  "default_locale": "hu"
+}
