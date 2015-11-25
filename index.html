@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network Chat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/>
+        <link href="css/headers.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icons.css" rel="stylesheet" type="text/css"/>
+        <link href="css/input_areas.css" rel="stylesheet" type="text/css"/>
+        <link href="css/switches.css" rel="stylesheet" type="text/css"/>
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body role="application">
+
+        <section role="region">
+
+            <header>
+                <button id="exit">X</button><h1>Network Chat</h1>
+            </header>
+            <ul role="tablist" class="bb-tablist" id="tabs">
+
+                <li id="panel1" role="presentation">
+                    <a id="tab1" href="#panel1" role="tab" aria-controls="tabpanel1">Settings</a>
+                    <div id="tabpanel1" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab1">
+                        <div class="empty"></div>
+                        <h2 class="bb-docs">Vibration</h2>
+                        <h2 class="bb-docs2">
+                            <label class="pack-radio">
+                                <input type="radio" name="vibra" id="vibraon" checked>
+                                <span></span>
+                            </label>
+                            <label class="pack-radio danger">
+                                <input type="radio" name="vibra" id="vibraoff">
+                                <span></span>
+                            </label>
+                        </h2>
+                        <br />
+                        <button class="buttonom" id="wificonnect">Check WiFi connection for IP</button>
+                        </div>
+                </li>
+                <li id="panel2" role="presentation">
+                    <a id="tab2" href="#panel2" role="tab" aria-controls="tabpanel2">Home</a>
+                    <div id="tabpanel2" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab2">
+                        <div class="empty"></div>
+                        
+                        <section class="gaia-list fit scroll sticky">
+
+                            <h2 class="bb-docs">Send message to(this will create a new tab):
+                                <br />
+                                <input id="IP" type="text" placeholder="IP" /></h2>
+
+                            <h2 class="bb-docs2"><button id="newtab" class="buttonom" >Create</button></h2>
+                            <br />
+
+                            <h2 class="bb-docs">New incoming messages:</h2>
+
+                            <ul id="newmessages">
+
+                            </ul>
+
+                        </section>
+                    </div>
+                </li>
+
+
+            </ul>
+        </section>
+
+        <script src="app.js" type="text/javascript"></script>
+
+    </body>
+</html>

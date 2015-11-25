@@ -1,0 +1,22 @@
+{
+  "type": "privileged",
+  "name": "Network Chat",
+  "description": "An app designed for communicating in the same network(without internet connection)",
+  "launch_path": "/index.html#panel2",
+    
+  "icons": {
+    "128": "/icons/icon128x128.png",
+    "512": "/icons/icon512x512.png"
+  },
+  "default_locale": "en",
+  "orientation": "portrait-primary",
+  "developer": {
+    "name": "Dóczi László",
+    "url": "https://github.com/dolvabtsze/Networkchat"
+  },
+  "permissions": {
+    "tcp-socket" : {
+        "description" : "Create TCP sockets and communicate over them."
+    }
+  }
+}
